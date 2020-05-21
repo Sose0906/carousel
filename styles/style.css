@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.slide-element {
+    display: none
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 40px;
+
+}
+
+.slides {
+    margin-top: 25px;
+}
+
+.slide-element {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-title {
+    font-size: 25px;
+    position: absolute;
+    text-align: left;
+    font-family: fantasy;
+    width: 100%;
+    padding: 25px;
+    bottom: -80px;
+
+}
+
+.prev {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    cursor: pointer;
+    width: auto;
+    margin-top: -22px;
+    left: -22px;
+    transition: font-size 0.3s;
+}
+
+.next {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    right: -22px;
+    cursor: pointer;
+    width: auto;
+    margin-top: -22px;
+    transition: font-size 0.3s;
+
+}
+
+.prev:hover, .next:hover {
+    font-size: 60px;
+}
+
+.slide-element img {
+    height: 80vh;
+    width: 90%;
+}
+
+#slideShow {
+    position: absolute;
+    right: 45%;
+    bottom: -40px;
+    font-size: 20px;
+    font-family: "Andale Mono";
+    color: #9e9a9a;
+}
+#slideShow:hover
+{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 1310px) {
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev:hover, .next:hover {
+        font-size: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    .slide-element img {
+        width: 100%;
+        height: 100%;
+    }
+    .image-title {
+        font-size: 20px;
+    }
+    #slideShow {
+
+        font-size: 20px;
+        right: 20%;
+        bottom: -60px;
+    }
+
+
+
+}
